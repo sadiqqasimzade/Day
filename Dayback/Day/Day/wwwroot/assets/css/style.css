@@ -1,0 +1,82 @@
+*
+::before
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#section1{
+    background-image: url("../img/R.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.pt10{
+    padding-top: 10%;
+}
+.pt20{
+    padding-top: 20%;
+}
+.pb10{
+    padding-bottom: 10%;
+}
+.pb20{
+    padding-bottom: 20%;
+}
+
+.hovercard:hover{
+    background: red !important;
+transition: 0.5s;
+    color:white !important
+}
+.hovercard{
+    transition: 0.5s;
+}
+
+#section5{
+    background-image:  url("../img/cta-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/**/
+.overlaycontainer {
+    position: relative;
+  }
+  
+  .overlayimage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: #fff;
+    background: rgba(255, 255, 255); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .overlaycontainer:hover .overlay {
+    opacity: 1;
+  }
+  
+ 
+/**/

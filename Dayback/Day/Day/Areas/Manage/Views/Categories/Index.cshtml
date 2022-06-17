@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Day.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid">
+
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Update" asp-route-id="@item.Id">Update</a>
+                    </td>
+                    <td>
+                        <form asp-action="Delete" asp-route-id="@item.Id">
+                            <button class="btn btn-primary" type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>
